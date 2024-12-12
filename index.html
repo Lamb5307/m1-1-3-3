@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 13.0.0.0 for Windows">
+    <link rel="stylesheet" href="style.css">
+<TITLE>述語論理</TITLE>
+</HEAD>
+<BODY>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>【　述語論理　】</h1>
+
+<p id="buttom"><strong>表示</strong></p><br>
+<p class="di"><b>｢述語論理｣</b></p>とは、命題を組み合わせて、別の事象の真偽を証明することです。述語論理には、<p class="di"><b>｢演繹推論｣</b></p>と<p class="di"><b>｢帰納推論｣</b></p>があります。<br>
+
+
+<strong>(1)演繹推論</strong><br>
+<p class="di"><b>｢演繹(えんえき)推論｣</b></p>とは、一般的な事象や事実から結論として、個々の事象を導く方法のことです。<br>
+例えば、”犬は吠える”→”ポチは犬である”→”ポチは吠える”のようになります。<br>
+<strong>(2)帰納推論</strong><br>
+<p class="di"><b>｢帰納推論｣</b></p>とは、演繹推論とは逆に、個々の事象から因果関係を推論して一般的な事象を導く方法のことです。帰納推論は、関係データベースにおけるデータ分析のデータマイニングに利用されています。<br>
+例えば、”犬Aは骨が好き”→”犬Bも骨が好き”→”犬は骨が好き”のようになります。<br>
+
+<script>
+    const buttom = document.getElementById('buttom');
+    const diElements = document.querySelectorAll('.di'); // クラスの要素をすべて取得
+
+    // マウスホバー時
+    buttom.addEventListener('mouseover', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '1';
+        });
+    }, false);
+
+    // マウスが離れている時
+    buttom.addEventListener('mouseleave', () => {
+        diElements.forEach(di => {
+            di.style.opacity = '0';
+        });
+    }, false);
+</script>
